@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    android:elevation="1dp"
+    tools:context="com.example.hlymcr.ajanda.Event">
+
+    <TextView
+        android:id="@+id/tarih"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="@color/colorPrimaryDark"
+        android:text="TextView"
+        android:textColor="?android:attr/textColorPrimaryNoDisable"
+        android:textSize="24sp"
+        android:textStyle="normal|bold"
+        tools:layout_editor_absoluteX="162dp"
+        tools:layout_editor_absoluteY="47dp"
+        tools:textStyle="normal|bold" />
+
+    <Button
+        android:id="@+id/kaydet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etkinlikD"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="49dp"
+        android:background="@drawable/buton"
+        android:text="Saati Ayarla" />
+
+    <EditText
+        android:id="@+id/etkinlik"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/tarih"
+        android:layout_marginTop="29dp"
+        android:background="@drawable/duzen"
+        android:elevation="2dp"
+        android:ems="10"
+
+        android:hint="Etkinlik Adı"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/etkinlikD"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/etkinlik"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/duzen"
+        android:ems="10"
+        android:hint="Etkinlik Detay"
+        android:inputType="textPersonName" />
+
+</RelativeLayout>
